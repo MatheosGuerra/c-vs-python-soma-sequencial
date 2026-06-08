@@ -4,11 +4,11 @@ Repositório do artigo científico submetido ao **SSCAD-WIC 2026** (Workshop de 
 
 ## Autores
 
-- Matheos de Oliveira Guerra — matheos.guerra@cesar.school
-- Eduardo Roma Cavalcanti de Albuquerque — erca@cesar.school
-- Bernardo Carneiro Heuer Guimarães — bchg@cesar.school
+- Matheos de Oliveira Guerra - matheos.guerra@cesar.school
+- Eduardo Roma Cavalcanti de Albuquerque - erca@cesar.school
+- Bernardo Carneiro Heuer Guimarães - bchg@cesar.school
 
-**Instituição:** CESAR School — Recife, PE, Brasil
+**Instituição:** CESAR School - Recife, PE, Brasil
 
 ## Resumo
 

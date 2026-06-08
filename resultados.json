@@ -1,0 +1,56 @@
+{
+  "C": {
+    "10000": {
+      "tempo_medio": 2.54e-05,
+      "tempo_desvio": 5.477225575051646e-07,
+      "memoria_media": 1.566
+    },
+    "100000": {
+      "tempo_medio": 0.0002668,
+      "tempo_desvio": 1.10770032048384e-05,
+      "memoria_media": 1.5652000000000001
+    },
+    "1000000": {
+      "tempo_medio": 0.002769,
+      "tempo_desvio": 5.839948629911045e-05,
+      "memoria_media": 1.5676
+    },
+    "10000000": {
+      "tempo_medio": 0.0287446,
+      "tempo_desvio": 0.003319874515700856,
+      "memoria_media": 1.5652000000000001
+    },
+    "100000000": {
+      "tempo_medio": 0.2708262,
+      "tempo_desvio": 0.0008388025393380663,
+      "memoria_media": 1.5676
+    }
+  },
+  "Python": {
+    "10000": {
+      "tempo_medio": 0.0001408,
+      "tempo_desvio": 5.0987253309037935e-05,
+      "memoria_media": 12.41
+    },
+    "100000": {
+      "tempo_medio": 0.0012652,
+      "tempo_desvio": 5.17271688767131e-05,
+      "memoria_media": 12.41
+    },
+    "1000000": {
+      "tempo_medio": 0.0127648,
+      "tempo_desvio": 0.0003465901037248465,
+      "memoria_media": 12.41
+    },
+    "10000000": {
+      "tempo_medio": 0.12483759999999999,
+      "tempo_desvio": 0.0018502768171276443,
+      "memoria_media": 12.41
+    },
+    "100000000": {
+      "tempo_medio": 1.2531288,
+      "tempo_desvio": 0.011955315750744528,
+      "memoria_media": 12.41
+    }
+  }
+}

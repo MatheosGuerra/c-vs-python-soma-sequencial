@@ -1,6 +1,6 @@
 # Análise Comparativa de Desempenho entre C e Python na Execução de Soma Sequencial
 
-Repositório do artigo científico submetido ao **SSCAD-WIC 2026** (Workshop de Iniciação Científica — XXVII Simpósio em Sistemas Computacionais de Alto Desempenho).
+Repositório do artigo científico submetido ao **SSCAD-WIC 2026** (Workshop de Iniciação Científica - XXVII Simpósio em Sistemas Computacionais de Alto Desempenho).
 
 ## Autores
 
@@ -60,7 +60,7 @@ Os resultados serão salvos em `resultados.json` e o gráfico gerado automaticam
 
 ## Evento
 
-**SSCAD-WIC 2026** — Workshop de Iniciação Científica  
+**SSCAD-WIC 2026** - Workshop de Iniciação Científica  
 XXVII Simpósio em Sistemas Computacionais de Alto Desempenho  
-3 a 5 de novembro de 2026 — Natal, RN, Brasil  
+3 a 5 de novembro de 2026 - Natal, RN, Brasil  
 https://sscad2026.imd.ufrn.br

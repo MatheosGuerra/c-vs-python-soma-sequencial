@@ -1,20 +1,20 @@
 # Análise Comparativa de Desempenho entre C e Python na Execução de Soma Sequencial
 
-Repositório do artigo científico submetido ao **SSCAD-WIC 2026** (Workshop de Iniciação Científica - XXVII Simpósio em Sistemas Computacionais de Alto Desempenho).
+Repositório do artigo científico submetido ao **SSCAD-WIC 2026** (Workshop de Iniciação Científica — XXVII Simpósio em Sistemas Computacionais de Alto Desempenho).
 
 ## Autores
 
-- Matheos de Oliveira Guerra - matheos.guerra@cesar.school
-- Eduardo Roma Cavalcanti de Albuquerque - erca@cesar.school
-- Bernardo Carneiro Heuer Guimarães - bchg@cesar.school
+- Matheos de Oliveira Guerra — matheos.guerra@cesar.school
+- Eduardo Roma Cavalcanti de Albuquerque — erca@cesar.school
+- Bernardo Carneiro Heuer Guimarães — bchg@cesar.school
 
-**Instituição:** CESAR School - Recife, PE, Brasil
+**Instituição:** CESAR School — Recife, PE, Brasil
 
 ## Resumo
 
-Este trabalho apresenta uma comparação empírica de desempenho entre as linguagens C e Python na execução de soma sequencial (soma dos inteiros de 0 a N). Foram medidos tempo de execução e uso de memória para valores de N entre 10.000 e 100.000.000 em um ambiente virtualizado (KVM) com processador Intel Xeon a 2,20 GHz.
+Este trabalho apresenta uma comparação empírica de desempenho entre as linguagens C e Python na execução de soma sequencial, utilizando o idioma nativo de cada linguagem: `sum(range(n))` em Python e laço `for` explícito em C. Foram medidos tempo de execução e uso de memória para valores de N entre 10.000 e 100.000.000 em um ambiente virtualizado (KVM) com processador Intel Xeon a 2,20 GHz, com 10 repetições por configuração após descarte de warm-up.
 
-**Resultado principal:** C é aproximadamente **4,6x mais rápido** e usa **7,7x menos memória** que Python.
+**Resultado principal:** C é aproximadamente **5,4x mais rápido** e usa **7,8x menos memória** que Python.
 
 ## Ambiente Experimental
 
@@ -29,7 +29,7 @@ Este trabalho apresenta uma comparação empírica de desempenho entre as lingua
 .
 ├── soma.c              # Implementação da soma sequencial em C
 ├── soma.py             # Implementação da soma sequencial em Python
-├── benchmark.py        # Script de benchmark (roda os experimentos)
+├── benchmark.py        # Script de benchmark (10 repetições + warm-up)
 ├── resultados.json     # Dados coletados nos experimentos
 └── comparacao_c_vs_python.png  # Gráfico comparativo
 ```
@@ -46,21 +46,23 @@ gcc -O0 -o soma soma.c
 python3 benchmark.py
 ```
 
-Os resultados serão salvos em `resultados.json` e o gráfico gerado automaticamente.
+Os resultados serão salvos em `resultados.json`.
 
 ## Resultados
 
-| N | Tempo C (s) | Tempo Python (s) | Razão (Py/C) |
+| N | C (s) | Python (s) | Razão (Py/C) |
 |---|---|---|---|
-| 10.000 | 0,000025 | 0,000141 | 5,5x |
-| 100.000 | 0,000267 | 0,001265 | 4,7x |
-| 1.000.000 | 0,002769 | 0,012765 | 4,6x |
-| 10.000.000 | 0,028745 | 0,124838 | 4,3x |
-| 100.000.000 | 0,270826 | 1,253129 | 4,6x |
+| 10.000 | 0,000025 ± 0,000002 | 0,000136 ± 0,000014 | 5,3x |
+| 100.000 | 0,000387 ± 0,000276 | 0,002249 ± 0,000941 | 5,8x |
+| 1.000.000 | 0,002615 ± 0,000089 | 0,014438 ± 0,000832 | 5,5x |
+| 10.000.000 | 0,025910 ± 0,000206 | 0,137712 ± 0,003237 | 5,3x |
+| 100.000.000 | 0,256632 ± 0,003122 | 1,373432 ± 0,035074 | 5,4x |
+
+> **Nota metodológica:** cada linguagem foi avaliada usando seu idioma nativo. O `sum(range(n))` do Python executa internamente em C (builtin otimizado do CPython), enquanto o código C usa laço explícito com `-O0`. Essa assimetria é discutida como ameaça à validade no artigo.
 
 ## Evento
 
-**SSCAD-WIC 2026** - Workshop de Iniciação Científica  
-XXVII Simpósio em Sistemas Computacionais de Alto Desempenho  
-3 a 5 de novembro de 2026 - Natal, RN, Brasil  
+**SSCAD-WIC 2026** — Workshop de Iniciação Científica
+XXVII Simpósio em Sistemas Computacionais de Alto Desempenho
+3 a 5 de novembro de 2026 — Natal, RN, Brasil
 https://sscad2026.imd.ufrn.br

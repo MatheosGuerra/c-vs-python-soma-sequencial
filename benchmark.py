@@ -4,7 +4,7 @@ import statistics
 import json
 
 TAMANHOS = [10_000, 100_000, 1_000_000, 10_000_000, 100_000_000]
-REPETICOES = 11  # 1 warm-up + 10 medições válidas
+REPETICOES = 11 
 
 resultados = {"C": {}, "Python": {}}
 
